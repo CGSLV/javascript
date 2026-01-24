@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gringo Detection</title>
+</head>
+<body>
+    <h1>Estrangeiro ou Brasileiro</h1>
+
+    Local de nascimento: <input type="text" name="pais" id="pais">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res"></div>
+        
+    <script>
+      function verificar() {
+        // Não basta pegar o seletor, tem que ser o VALOR dentro do seletor! Lembre do [.value] no final
+        var pais = document.getElementById('pais').value;
+        var res = document.querySelector('div#res');
+
+        if (pais == 'Brasil') {
+          res.innerHTML = `<p>Você nasceu no ${pais}, então é <strong>brasileiro!</strong></p>`
+
+        } else {
+          res.innerHTML = `<p>Você nasceu em ${pais}, então é <strong>estrangeiro!</strong></p>`;
+        }
+      }
+    </script>
+
+</body>
+</html>
