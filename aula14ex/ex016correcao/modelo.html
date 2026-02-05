@@ -10,21 +10,18 @@
 </head>
 <body>
     <header>
-        <h1>Tabuada</h1>
+        <h1>Verificador de Idade</h1>
     </header>
 
     <section>
-        <div id="tabuada">
-            <p> <label for="inum">Número:</label>
-                <input type="number" id="inum" name="num">
-                <button onclick="calcular()">Gerar Tabuada</button> </p>
+        <div id="dados">
+            <p>Início: <input type="number" name="inicio" id="txtini"></p>
+            <p>Fim: <input type="number" name="fim" id="txtfim"></p>
+            <p>Passo: <input type="number" name="passo" id="txtpas"></p>
+            <p><input type="button" value="Contar" onclick="contar()"></p>
         </div>
 
-        <div id="res" name="tabuada">
-            <select id="lstabuada" size="10">
-                <option>Digite um número acima</option>
-            </select>
-        </div>
+        <div id="res"></div>
     </section>
 
     <footer>
