@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dados com JS</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        button {
+            padding: 30px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+<!--    .prompt e .alert juntos-->
+    <h1>Trabalhando com dados v1.0</h1>
+    <button onclick="comecar()">Clique para começar</button>
+
+    <script>
+        function comecar() {
+          let nome = window.prompt("Qual é seu nome?")
+          window.alert(`Olá, ${nome}! É um prazer te conhercer!`)
+
+        }
+    </script>
+</body>
+</html>
