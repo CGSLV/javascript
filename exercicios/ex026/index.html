@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Números com JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="dados">
+    <h1>Contagem "inteligente"</h1>
+
+    <p>Use qualquer valor nas caixas, simule contagens crescentes e regressivas. Use também valores negativos</p>
+
+    <form action="#" method="get">
+        <p>
+            <label for="iinicial">Valor inicial:</label>
+            <input type="number" placeholder="Início da contagem" id="iinicial" name="valor">
+        </p>
+
+        <p>
+            <label for="ifinal">Valor final:</label>
+            <input type="number" placeholder="Fim da contagem" id="ifinal" name="valor">
+        </p>
+
+        <p>
+            <input type="submit" value="Contar" formaction="javascript:contar()" id="ibotao">
+        </p>
+    </form>
+    
+</div>
+
+<div id="res">
+    <p>Preencha os dados acima e aperte o botão</p>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
